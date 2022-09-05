@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="flex justify-around"> 
+    <div className="flex justify-around text-gray-400"> 
       <div className="flex flex-row justify-start">
         <div className="mx-5">隱私權和 Cookie</div>
         <div className="mx-5">法律聲明</div>
