@@ -1,9 +1,12 @@
 import Head from 'next/head';
+
 import Header from "../components/Header"
-import Card from "../components/Card"
+import NoteCard from "../components/NoteCard"
 import Footer from "../components/Footer"
 
+
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -13,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Header/>
-      <Card/>
+      <NoteCard/>
       <Footer/>
     </>
 
