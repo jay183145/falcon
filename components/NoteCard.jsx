@@ -34,7 +34,7 @@ const NoteCard = () => {
                     </IconButton>
                   }
                   title={ note.標題 }
-                  subheader={ note.keyword }
+                  subheader={ note.發布日期 }
                 />
               </Card>
             </Grid>
