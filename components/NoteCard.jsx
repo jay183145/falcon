@@ -17,7 +17,7 @@ const NoteCard = () => {
       .then(res => res.json())
       .then(data => {
         console.log(data)
-        return setNotes(data)
+        return setNotes(data.slice(0,100))
       })
   }, [])
   
@@ -26,7 +26,7 @@ const NoteCard = () => {
       {notes.map(note => (
         <>
           <p key= {note.id}>{ note.標題 }</p>
-          <p key= {note.id}>{note.keyword}</p>
+          <p key= {note.id}>{ note.startdate }</p>
         </>
       ))}
     </div>
