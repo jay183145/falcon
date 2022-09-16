@@ -5,6 +5,8 @@ import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
+import Avatar from '@mui/material/Avatar'
+import IconButton from '@mui/material/IconButton'
 
 const NoteCard = () => {
   const [notes, setNotes] = useState([])
@@ -24,12 +26,23 @@ const NoteCard = () => {
         {notes.map(note => (
           <>
             <Grid item key= {note.id} lg={3}>
-              { note.標題 }
+              <Card>
+                <CardHeader
+                  action={
+                    <IconButton aria-label="">
+                      
+                    </IconButton>
+                  }
+                  title={ note.標題 }
+                  subheader={ note.keyword }
+                />
+              </Card>
             </Grid>
-            <p key= {note.id}>{ note.startdate }</p>
           </>
         ))}
       </Grid>
+
+      
       
     </div>
   )
