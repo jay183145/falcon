@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Header from "../components/Header"
-import NoteCard from "../components/NoteCard"
+import NewsCard from "../components/NewsCard"
 import Footer from "../components/Footer"
 
 
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Header/>
-      <NoteCard/>
+      <NewsCard/>
       <Footer/>
     </>
 
